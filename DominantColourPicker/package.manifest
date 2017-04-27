@@ -1,0 +1,30 @@
+﻿{   
+    propertyEditors: [      
+        {
+            /*this must be a unique alias*/
+            alias: "League.DominantColourPicker",
+            name: "Dominant Colour Picker", 
+			hideLabel: true,
+            editor: {
+                view: "~/App_Plugins/DominantColourPicker/dominantcolourpicker.html"
+            },
+			prevalues: { 
+				fields: [
+					{
+						label: "Image Alias",
+						description: "Property alias of image to use",
+						key: "imageAlias",
+						view: "textstring"
+					}
+				]
+			}
+        }
+    ],
+    //array of files we want to inject into the application on app_start
+    javascript: [
+        '~/App_Plugins/DominantColourPicker/dominantcolourpicker.controller.js'
+    ],
+	css: [
+		'/App_Plugins/DominantColourPicker/assets/dominantColour.css'
+	]
+}

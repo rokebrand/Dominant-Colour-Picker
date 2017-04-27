@@ -1,0 +1,100 @@
+
+
+.image-section .image-wrap {
+  position: relative;
+  display:inline-block;
+}
+
+.swatches .swatch { cursor:pointer; }
+.finalColour {  padding:3px; }
+.finalColour span { padding: 0 0 0 60px; display:inline-block }
+.finalColour input { border:1px solid #ddd; padding:5px; margin:0; }
+.chosenColour label { float:left;margin: 9px 20px 9px 0; font-size:12px }
+
+
+/* -- Image examples ------------------------------------------------------------------ */
+/* line 125, ../sass/app.sass */
+.run-functions-button1 {
+  position: absolute;
+bottom: 0;
+left: 0;
+width: 100px;
+height: 40px;
+margin-bottom: 10px;
+margin-left: 10px;
+border: none;
+color: #ffffff;
+background-color: #555;
+font-size: 13px;
+font-weight: 500;
+cursor: pointer;
+text-transform: uppercase;
+border: 1px solid #fff;
+}
+/* line 141, ../sass/app.sass */
+.run-functions-button:hover1 {
+  background-color: #999;
+  color: #ffffff;
+}
+
+/* line 146, ../sass/app.sass */
+.run-functions-button1.hide {
+  -webkit-transition: -webkit-transform 0.4s, top 0.4s;
+  -moz-transition: -moz-transform 0.4s, top 0.4s;
+  -o-transition: -o-transform 0.4s, top 0.4s;
+  transition: transform 0.4s, top 0.4s;
+  top: 100%;
+  -webkit-transform: scale(0, 0);
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -o-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+
+
+
+.target-image {
+  max-width: 100%;
+  max-height: 500px;
+  margin-bottom: 20px;
+  max-width: 800px;
+  width: 100%;
+}
+
+.color-thief-output {
+  display: none;
+  padding: 10px 0 5px 0;
+}
+.color-thief-output .function-title {
+  color: #444444;
+  font-weight: bold;
+}
+.function {
+  margin-bottom: 10px;
+}
+
+/* line 180, ../sass/app.sass */
+.swatches {
+  *zoom: 1;
+}
+/* line 38, ../../../../.rvm/gems/ruby-1.9.3-p392/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.swatches:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 183, ../sass/app.sass */
+.swatch {
+  width: 60px;
+  height: 30px;
+  margin: 0 2px 2px 0;
+  background: #dddddd;
+  float: left;
+}
+
+/* line 190, ../sass/app.sass */
+canvas {
+  display: none;
+}
+

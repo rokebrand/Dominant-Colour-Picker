@@ -1,0 +1,57 @@
+﻿
+<div ng-controller="League.DominantColourPickerController">
+    <div ng-show="{{imageAlias!=''}}" class="colourWrapper">
+        <div ng-show="{{showImage}}" class="image-section">
+            <div class="umb-el-wrap">
+                <img id="scp-image-{{model.alias}}" class="target-image clearfix" style="max-width: 800px;" src="{{imagePath}}" alt="" />
+            </div>
+
+            <div class="umb-el-wrap">
+                <div class="color-thief-output"></div>
+            </div>
+
+            <div class="finalColour umb-el-wrap">
+                <span style="background-color: {{ model.value }}">
+                    <input ng-model="model.value" id="scp-input-{{model.alias}}"
+                           class="umb-editor umb-textstring textstring"
+                           val-server="value"
+                           ng-required="model.validation.mandatory"
+                           ng-trim="false" />
+                </span><button class="btn run-functions-button" prevent-default="" style="vertical-align:bottom">Generate Palette</button>
+                
+            </div>
+
+            <!--<div class="umb-el-wrap">
+                <div class="controls">
+                    
+                </div>
+            </div>-->
+        </div>
+
+        <div ng-show="{{!showImage}}">
+            No image found
+        </div>
+    </div>
+    <div ng-show="{{imageAlias==''}}">
+        Please select an image alias for the property
+    </div>
+</div>
+
+<!--<script id="color-thief-output-template" type="text/x-mustache">
+    <div class="function get-color">
+        <h3 class="function-title smartcol">Dominant Colour</h3>
+        <div class="swatches">
+            <div class="swatch" style="background-color: rgb({{color.0}}, {{color.1}}, {{color.2}})"></div>
+        </div>
+    </div>
+    <div class="function get-palette">
+        <h3 class="function-title smartcol">Palette</h3>
+        <div class="function-output">
+            <div class="swatches">
+                {{#palette}}
+                <div class="swatch" style="background-color: rgb({{0}}, {{1}}, {{2}})"></div>
+                {{/palette}}
+            </div>
+        </div>
+    </div>
+</script>-->
